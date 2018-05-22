@@ -127,7 +127,7 @@ The ATA Gateway receives network traffic and Windows Events from your network an
 |-|-|
 |Network Listener|The Network Listener captures network traffic and parsing the traffic. This is a CPU-heavy task, so  it is especially important to check [ATA Prerequisites](ata-prerequisites.md) when planning your ATA Gateway or ATA Lightweight Gateway.|
 |Event Listener|The Event Listener captures and parsing Windows Events forwarded from a SIEM server on your network.|
-|Windows Event Log Reader|The Windows Event Log Reader reads and parsing Windows Events forwarded to the ATA Gateway's Windows Event Log from the domain controllers.|
+|Windows Event Log Reader|The Windows Event Log Reader reads and parses Windows Events forwarded to the ATA Gateway's Windows Event Log from the domain controllers.|
 |Network Activity Translator | Translates parsed traffic into a logical representation of the traffic used by ATA (NetworkActivity).
 |Entity Resolver|The Entity Resolver takes the parsed data (network traffic and events) and resolves it data with Active Directory to find account and identity information. It is then matched with the IP addresses found in the parsed data. The Entity Resolver inspects the packet headers efficiently, to enable parsing of authentication packets for machine names, properties, and identities. The Entity Resolver combines the parsed authentication packets with the data in the actual packet.|
 |Entity Sender|The Entity Sender sends the parsed and matched data to the ATA Center.|
